@@ -1,0 +1,331 @@
+body{
+    background-color: beige;
+    font-family: sans-serif;
+}
+
+.main-logo{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-logo img{
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-photo{
+    width: 550px;
+    height: auto;
+    max-width: 100%;
+    padding: 15px 15px 50px 15px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.recipe-container{
+    width: 800px;
+    margin: 40px auto;
+}
+
+.photo-ingredients-layout{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.photo-area{
+    width: 50%;
+}
+
+.ingredients-wrapper h3{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    width: 55%;
+}
+
+.recipe-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 ;
+    margin-bottom: 20px;
+    gap: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.recipe-no{
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    color: #A0A0A0;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-family: 'Your-Handwriting-Font',sans-serif;
+}
+
+.recipe-title{
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+}
+
+.polaroido-wrapper{
+    position: relative;
+    transform: rotate(-3deg);
+    display: block;
+    margin: 20px 0 20px 0;
+    width: 350px;
+}
+
+.photo-caption{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    font-family: cursive sans-serif;
+    width: 100%;
+}
+
+.instructon-steps {
+    line-height: 1.5;
+}
+
+.explanation {
+    text-decoration: none;
+    color: #333333;
+}
+
+.explanation:hover {
+    color:#dc9d31 ;
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.recipe-point{
+    border-color: #fff8e1;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ffcc80;
+    display: inline-block;
+}
+
+.recipe-point,.point-title{
+    font-weight: bold;
+    color: #cc5500;
+    margin-right: 5px;
+}
+.recipe-point p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.header-speacer{
+    width: 80px;
+    height: 1px;
+}
+
+.purchase-area{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.purchase-message{
+    font-family: 'Your-handwriting-font,sans-serif';
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.purchase-button{
+    display: inline-block;
+    background-color: #C75F4C;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 12px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.purchase-button:hover{
+    background-color: #B35747;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.footer-contact{
+    text-align: center;
+    font-size: 0.9em;
+    padding: 15px 0;
+    color: #666;
+}
+
+.contact-link{
+    color: #C75F4C;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover{
+    color: #B35747;
+    border-bottom-color: #B35747;
+}
+.footer-nav{
+    text-align: center;
+    padding: 15px 0 10px;
+    border-top: 1px solid #eee;
+}
+
+.to-top-link{
+    color: #666;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.to-top-link:hover{
+    color: #C75F4C;
+    background-color: #f9f9f9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.recipe-notebook{
+    background-color: #FFFFFF;
+    width: 95%;
+    max-width: 800;
+    margin: 20px auto;
+    padding: 30px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom,#E0E0E0 1px,transparent 1px);
+    background-size: 100% 25px 25px 100%;
+    background-position: 0 0,40px 0;
+}
+
+.recipe-notebook{
+    position: relative;
+}
+
+.recipe-notebook::before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 30px;height: 100%;
+    background-image: radial-gradient(circle at 15px 12.5px,#E0E0E0 5px,transparent 5px);
+    background-size: 30px 25px;
+    background-repeat: repeat-y;
+}
+
+@media screen and (max-width:768px) {
+    .recipe-container{
+        width: auto;
+        padding: 10px 15px;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .recipe-title{
+        font-size: 24px;
+        white-space: nowrap;
+        padding: 0 10px;
+        padding-bottom: 20px;
+    }
+
+    .photo-ingredients-layout{
+        display: block;
+        gap: 0;
+    }
+
+    .photo-area,.ingredients-wrapper{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .polaroido-wrapper{
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+        transform: rotate(-3deg);
+    }
+
+    .recipe-header{
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .main-logo{
+        text-align: center;
+        margin: 20px auto 0 auto;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .recipe-no{
+        text-align: right;
+        margin-top: 5px;
+        padding-right: 15px;
+        float: right;
+        font-size: 12px;
+        top: 55px;
+    }
+
+    .main-logo img{
+        width: 45vw;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+   .purchase-area{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+
+   .purchase-button{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .purchase-button:hover{
+    background-color: #B35747;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+   }
+}
